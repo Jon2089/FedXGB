@@ -1,0 +1,8 @@
+Assign splits to each feature based on feature importance
+sample from the splits where distribution is softmax on feature importance
+build histogram on that sample and train an estimator
+
+now for federated:
+obtain and aggregate feature importances and assign splits per feature (acc to categorization, obtain that too)
+get feature splits based on that from each client and aggregate them based on client sample sizes
+*check if gain values in feature importances depends upon sample size*
